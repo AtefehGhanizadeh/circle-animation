@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style>
+            #wrapper{
+                margin: 200px auto;
+                width: 500px;
+                height: 25px;
+                position: relative;
+            }
+            #wrapper div{
+                width: 25px;
+                height: 25px;
+                background-color: darkblue;
+                border-radius: 25px;
+                position: absolute;
+                animation-name: circle1;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            
+            #circle2{
+                left: 35px;
+                animation-delay:0.15s;
+            }
+            #circle3{
+                left: 70px;
+                animation-delay: 0.3s ;
+            }
+            #circle4{
+                left: 105px;
+                animation-delay: 0.45s ;
+            }
+            #circle5{
+                left: 140px;
+                animation-delay:0.6s ;
+            }
+            #circle6{
+                left: 175px;
+                animation-delay:0.75s ;
+            }
+            @keyframes circle1 {
+                0%{
+                    top: 0px;
+                    opacity: 1;
+                }
+                50%{
+                    top: 100px;
+                    opacity: 0.4;
+                }
+                100%{
+                    top: 0px;
+                    opacity: 1;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="circle1"></div>
+            <div id="circle2"></div>
+            <div id="circle3"></div>
+            <div id="circle4"></div>
+            <div id="circle5"></div>
+            <div id="circle6"></div>
+
+        </div>
+    </body>
+</html>
